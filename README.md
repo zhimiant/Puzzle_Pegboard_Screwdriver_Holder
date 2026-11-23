@@ -1,5 +1,9 @@
 # Modular Puzzle Pegboard Screwdriver Holder
 
+![V3 screwdriver-holder model — front, isometric, side and rear views](images/05_v3_model_multiview.png)
+
+*V3 model overview: front puzzle joints, sloped top and bottom surfaces, and rear pegboard hooks.*
+
 ## 1. What is it?
 
 This project is a modular, 3D-printed screwdriver holder designed for a laboratory pegboard. It consists of three puzzle-shaped pieces: a left module, a middle module, and a right module. The pieces fit together to form one holder, but they can also be printed separately in three different colors.
@@ -33,35 +37,69 @@ The 40 mm horizontal pitch is especially important for positioning the three mod
 
 ## 4. Design and Fabrication Documentation
 
-The following screenshots and photographs document the design and print-preparation process. The images are from this project; the photographs in the printing section show **printing in progress**, not completed installation tests.
+The images in this section are **original screenshots and photographs from this project**. They are shown directly in the README rather than inside tables. The three printing photographs document the manufacturing process; they do not yet show a finished, tested pegboard installation.
 
-### Reference Pegboard Hook and Blender Modeling
+### 4.1 Reference Pegboard Hook
 
-| Imported reference hook | Modular design, front view | Rear mounting interface |
-| --- | --- | --- |
-| <img src="images/01_reference_pegboard_hook_blender.png" width="260" alt="Instructor's pegboard hook imported into Blender"> | <img src="images/02_blender_modular_holder_front.png" width="260" alt="Three separated puzzle modules shown from the front in Blender"> | <img src="images/04_blender_modular_holder_rear.png" width="260" alt="Rear view of the pegboard mounting interfaces in Blender"> |
+The instructor-provided pegboard hook STL was imported into Blender as the starting point for the mounting interface.
 
-### Final V3 Design
+![Pegboard hook STL imported in Blender](images/01_reference_pegboard_hook_blender.png)
 
-| Three-module isometric view | Three-module front view |
-| --- | --- |
-| <img src="images/06_v3_three_color_isometric.png" width="350" alt="Three puzzle-shaped screwdriver-holder modules in separate colors"> | <img src="images/07_v3_three_color_front.png" width="350" alt="Front-facing view of three separate puzzle modules"> |
+*Figure 1. Original pegboard hook reference in Blender.*
 
-### Slicing in Bambu Studio
+### 4.2 Blender Modeling
 
-The STL models were prepared for the **Bambu Lab H2D** with **0.4 mm nozzles**. The three pieces were assigned separate filament colors. The slicer preview includes generated support structures.
+The holder was developed as three separate puzzle-shaped pieces, each with an approximately 15 mm circular screwdriver opening.
 
-| Print preparation | Sliced three-color preview |
-| --- | --- |
-| <img src="images/08_bambu_studio_single_module.png" width="350" alt="Bambu Studio single-module preparation"> | <img src="images/09_bambu_studio_sliced_preview.png" width="350" alt="Bambu Studio sliced preview showing three colored modules with supports"> |
+![Three puzzle modules viewed from the front in Blender](images/02_blender_modular_holder_front.png)
 
-### Actual 3D Printing Process
+*Figure 2. Front view showing the interlocking puzzle joints.*
 
-These three photographs document the **blue, green, and orange modules being printed** on the H2D. They show the fabrication stage only; a separate finished-object or on-pegboard photo can be added after physical testing.
+![Three puzzle modules viewed from above in Blender](images/03_blender_modular_holder_top.png)
 
-| Blue module | Green module | Orange module |
-| --- | --- | --- |
-| <img src="images/10_h2d_printing_blue_module.jpg" width="230" alt="Blue module being 3D printed on the H2D"> | <img src="images/11_h2d_printing_green_module.jpg" width="230" alt="Green module being 3D printed on the H2D"> | <img src="images/12_h2d_printing_orange_module.jpg" width="230" alt="Orange module being 3D printed on the H2D"> |
+*Figure 3. Angled top view showing the screwdriver holes and module geometry.*
+
+![Rear view of the pegboard attachment interface in Blender](images/04_blender_modular_holder_rear.png)
+
+*Figure 4. Rear view showing the mounting hooks.*
+
+### 4.3 V3 Model Presentation
+
+![Three individually colored screwdriver holder modules, isometric view](images/06_v3_three_color_isometric.png)
+
+*Figure 5. Three-module layout with distinct colors.*
+
+![Puzzle-module front view](images/07_v3_three_color_front.png)
+
+*Figure 6. Front view of the left, middle, and right puzzle edges.*
+
+### 4.4 Slicing in Bambu Studio
+
+The STL parts were prepared in **Bambu Studio** for the **Bambu Lab H2D**, using a **0.4 mm nozzle** and separate filament colors. The preview shows automatically generated supports.
+
+![Bambu Studio model preparation screenshot](images/08_bambu_studio_single_module.png)
+
+*Figure 7. Preparing a screwdriver-holder module for slicing.*
+
+![Bambu Studio preview of the three-color print](images/09_bambu_studio_sliced_preview.png)
+
+*Figure 8. Layer-by-layer slicing preview of the three-color layout.*
+
+### 4.5 Actual 3D Printing Process
+
+These three photos show the modules **during printing** on the H2D. They are real process photographs, not renderings or completed-product claims.
+
+<p align="center"><img src="images/10_h2d_printing_blue_module.jpg" alt="Blue screwdriver holder module being printed on the H2D" width="350"></p>
+
+*Figure 9. Printing the blue module.*
+
+<p align="center"><img src="images/11_h2d_printing_green_module.jpg" alt="Green screwdriver holder module being printed on the H2D" width="350"></p>
+
+*Figure 10. Printing the green module.*
+
+<p align="center"><img src="images/12_h2d_printing_orange_module.jpg" alt="Orange screwdriver holder module being printed on the H2D" width="350"></p>
+
+*Figure 11. Printing the orange module.*
 
 ## Model Files
 
