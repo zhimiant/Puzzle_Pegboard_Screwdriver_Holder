@@ -65,11 +65,13 @@ These three photographs document the **blue, green, and orange modules being pri
 
 ## Model Files
 
-The `models/` folder contains four models—left, middle, right, and the three-piece assembly—each supplied in both STL and STEP formats:
+The `models/` folder contains four models—left, middle, right, and the three-piece layout—each in STL and STEP formats. Click a file name below to open it on GitHub.
 
-- `puzzle_pegboard_left.stl` / `puzzle_pegboard_left.step`
-- `puzzle_pegboard_middle.stl` / `puzzle_pegboard_middle.step`
-- `puzzle_pegboard_right.stl` / `puzzle_pegboard_right.step`
-- `puzzle_pegboard_assembled.stl` / `puzzle_pegboard_assembled.step`
+| Module | STL (3D printing) | STEP (CAD model) |
+| --- | --- | --- |
+| Left piece | [puzzle_pegboard_left.stl](models/puzzle_pegboard_left.stl) | [puzzle_pegboard_left.step](models/puzzle_pegboard_left.step) |
+| Middle piece | [puzzle_pegboard_middle.stl](models/puzzle_pegboard_middle.stl) | [puzzle_pegboard_middle.step](models/puzzle_pegboard_middle.step) |
+| Right piece | [puzzle_pegboard_right.stl](models/puzzle_pegboard_right.stl) | [puzzle_pegboard_right.step](models/puzzle_pegboard_right.step) |
+| Three-part layout (separated for different colors) | [puzzle_pegboard_assembled.stl](models/puzzle_pegboard_assembled.stl) | [puzzle_pegboard_assembled.step](models/puzzle_pegboard_assembled.step) |
 
-The individual STL files are intended for printing the pieces separately; the assembled model shows the complete design.
+The three individual STL files are for printing each module separately. The assembled files preserve the separated three-part layout for multicolor printing, rather than fusing them into a single solid.
