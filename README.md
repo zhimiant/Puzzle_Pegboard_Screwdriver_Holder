@@ -113,3 +113,11 @@ The `models/` folder contains four models—left, middle, right, and the three-p
 | Three-part layout (separated for different colors) | [puzzle_pegboard_assembled.stl](models/puzzle_pegboard_assembled.stl) | [puzzle_pegboard_assembled.step](models/puzzle_pegboard_assembled.step) |
 
 The three individual STL files are for printing each module separately. The assembled files preserve the separated three-part layout for multicolor printing, rather than fusing them into a single solid.
+
+### Sliced Print Job
+
+The three-color print job was sliced in **Bambu Studio** for the **Bambu Lab H2D** with a **0.4 mm nozzle**.
+
+**[Download the three-color sliced print job (.gcode.3mf)](models/puzzle_pegboard_three_color_sliced.gcode.3mf)**
+
+The `.gcode.3mf` file is a sliced 3MF print-job container that includes G-code and print-related settings. It is different from the STL/STEP design files above. Use the correct printer and material configuration before running the print.
