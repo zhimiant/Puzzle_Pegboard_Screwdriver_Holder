@@ -31,6 +31,38 @@ The 40 mm horizontal pitch is especially important for positioning the three mod
 5. **Slicing:** I imported the STL files into **Bambu Studio** and sliced them for 3D printing. The parts were prepared separately so that different colors could be assigned.
 6. **Preparing to print:** I exported the sliced print job as a **G-code file** for the **Bambu Lab H2D** 3D printer, using a **0.4 mm nozzle**.
 
+## 4. Design and Fabrication Documentation
+
+The following screenshots and photographs document the design and print-preparation process. The images are from this project; the photographs in the printing section show **printing in progress**, not completed installation tests.
+
+### Reference Pegboard Hook and Blender Modeling
+
+| Imported reference hook | Modular design, front view | Rear mounting interface |
+| --- | --- | --- |
+| <img src="images/01_reference_pegboard_hook_blender.png" width="260" alt="Instructor's pegboard hook imported into Blender"> | <img src="images/02_blender_modular_holder_front.png" width="260" alt="Three separated puzzle modules shown from the front in Blender"> | <img src="images/04_blender_modular_holder_rear.png" width="260" alt="Rear view of the pegboard mounting interfaces in Blender"> |
+
+### Final V3 Design
+
+| Three-module isometric view | Three-module front view |
+| --- | --- |
+| <img src="images/06_v3_three_color_isometric.png" width="350" alt="Three puzzle-shaped screwdriver-holder modules in separate colors"> | <img src="images/07_v3_three_color_front.png" width="350" alt="Front-facing view of three separate puzzle modules"> |
+
+### Slicing in Bambu Studio
+
+The STL models were prepared for the **Bambu Lab H2D** with **0.4 mm nozzles**. The three pieces were assigned separate filament colors. The slicer preview includes generated support structures.
+
+| Print preparation | Sliced three-color preview |
+| --- | --- |
+| <img src="images/08_bambu_studio_single_module.png" width="350" alt="Bambu Studio single-module preparation"> | <img src="images/09_bambu_studio_sliced_preview.png" width="350" alt="Bambu Studio sliced preview showing three colored modules with supports"> |
+
+### Actual 3D Printing Process
+
+These three photographs document the **blue, green, and orange modules being printed** on the H2D. They show the fabrication stage only; a separate finished-object or on-pegboard photo can be added after physical testing.
+
+| Blue module | Green module | Orange module |
+| --- | --- | --- |
+| <img src="images/10_h2d_printing_blue_module.jpg" width="230" alt="Blue module being 3D printed on the H2D"> | <img src="images/11_h2d_printing_green_module.jpg" width="230" alt="Green module being 3D printed on the H2D"> | <img src="images/12_h2d_printing_orange_module.jpg" width="230" alt="Orange module being 3D printed on the H2D"> |
+
 ## Model Files
 
 The `models/` folder contains four models—left, middle, right, and the three-piece assembly—each supplied in both STL and STEP formats:
