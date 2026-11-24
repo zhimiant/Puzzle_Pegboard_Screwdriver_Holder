@@ -1,9 +1,5 @@
 # Modular Puzzle Pegboard Screwdriver Holder
 
-![V3 screwdriver-holder model — front, isometric, side and rear views](images/05_v3_model_multiview.png)
-
-*V3 model overview: front puzzle joints, sloped top and bottom surfaces, and rear pegboard hooks.*
-
 ## 1. What is it?
 
 This project is a modular, 3D-printed screwdriver holder designed for a laboratory pegboard. It consists of three puzzle-shaped pieces: a left module, a middle module, and a right module. The pieces fit together to form one holder, but they can also be printed separately in three different colors.
@@ -28,96 +24,104 @@ The 40 mm horizontal pitch is especially important for positioning the three mod
 
 ## 3. How was it made?
 
-1. **Brainstorming:** I began by identifying a practical storage need in the laboratory and developed the idea of a modular, puzzle-shaped screwdriver holder.
-2. **Importing the reference:** After brainstorming, I imported the pegboard hook from the **STL file provided by the instructor** into **Blender**. I used this hook as the mounting interface and developed the holder's geometry around it.
-3. **3D modeling:** In Blender, I designed three interlocking modules—left, middle, and right—with a circular opening for a screwdriver in each piece. I refined the sloped upper and lower surfaces and the edges while retaining the pegboard mounting interface.
-4. **Exporting the model:** After completing the Blender model, I exported the three parts from Blender as **STL files**.
-5. **Slicing:** I imported the STL files into **Bambu Studio** and sliced them for 3D printing. The parts were prepared separately so that different colors could be assigned.
-6. **Preparing to print:** I exported the sliced print job as a **G-code file** for the **Bambu Lab H2D** 3D printer, using a **0.4 mm nozzle**.
+1. **Brainstorming:** I identified the need for a screwdriver organizer that fits the workshop pegboard, and developed a modular, puzzle-shaped concept.
+2. **Reference geometry:** I imported the instructor-provided pegboard hook STL into **Blender** as the starting mounting interface.
+3. **Modeling:** I developed three interlocking pieces (left, middle, right), each with an approximately **15 mm screwdriver opening**, while retaining the reference pegboard hooks.
+4. **Export:** I exported individual and three-part designs in **STL** and **STEP** formats.
+5. **Slicing:** I prepared the designs in **Bambu Studio**, including separate print jobs and a combined layout, for the **Bambu Lab H2D** with a **0.4 mm nozzle**.
+6. **Initial printing:** I chose an orientation with the hook side facing upward, prioritizing **fewer support structures**. During printing/handling, **one hook broke**.
+7. **Feedback and revision plan:** My instructor explained that, for FDM printing, the hook orientation relative to the printed layers matters. The next iteration will **rotate the model so the hooks face sideways rather than upward**, even if this requires more supports. This revised orientation still needs to be printed and tested.
 
 ## 4. Design and Fabrication Documentation
 
-The images in this section are **original screenshots and photographs from this project**. They are shown directly in the README rather than inside tables. The three printing photographs document the manufacturing process; they do not yet show a finished, tested pegboard installation.
+All images below are screenshots and design images from this project. They are displayed directly in the README at readable sizes. The ideal-outcome images are **design visualizations, not photographs of a successfully printed product**.
 
-### 4.1 Reference Pegboard Hook
+### 4.1 Design Concept
 
-The instructor-provided pegboard hook STL was imported into Blender as the starting point for the mounting interface.
+<p align="center"><img src="images/design_proposal.png" alt="Design proposal for the three-piece modular screwdriver holder" width="760"></p>
 
-![Pegboard hook STL imported in Blender](images/01_reference_pegboard_hook_blender.png)
+*Figure 1. Design proposal and model overview.*
 
-*Figure 1. Original pegboard hook reference in Blender.*
+### 4.2 Reference Pegboard Hook and Blender Modeling
 
-### 4.2 Blender Modeling
+The pegboard hook was based on the instructor-provided STL.
 
-The holder was developed as three separate puzzle-shaped pieces, each with an approximately 15 mm circular screwdriver opening.
+<p align="center"><img src="images/ikea_sized_hook_in_blender.png" alt="Instructor-supplied hook model imported into Blender" width="760"></p>
 
-![Three puzzle modules viewed from the front in Blender](images/02_blender_modular_holder_front.png)
+*Figure 2. Reference hook geometry imported into Blender.*
 
-*Figure 2. Front view showing the interlocking puzzle joints.*
+<p align="center"><img src="images/models_in_blender_1.png" alt="Blender model development screenshot 1" width="760"></p>
 
-![Three puzzle modules viewed from above in Blender](images/03_blender_modular_holder_top.png)
+*Figure 3. Three-piece modular design in Blender.*
 
-*Figure 3. Angled top view showing the screwdriver holes and module geometry.*
+<p align="center"><img src="images/models_in_blender_2.png" alt="Blender model development screenshot 2" width="760"></p>
 
-![Rear view of the pegboard attachment interface in Blender](images/04_blender_modular_holder_rear.png)
+*Figure 4. Additional view of the modular holder in Blender.*
 
-*Figure 4. Rear view showing the mounting hooks.*
+<p align="center"><img src="images/models_in_blender_3.png" alt="Blender model development screenshot 3" width="760"></p>
 
-### 4.3 V3 Model Presentation
+*Figure 5. Mounting interface and additional modeling details.*
 
-![Three individually colored screwdriver holder modules, isometric view](images/06_v3_three_color_isometric.png)
+### 4.3 Intended Appearance
 
-*Figure 5. Three-module layout with distinct colors.*
+<p align="center"><img src="images/ideal_print_outcome_1.png" alt="Visualized three-color design, isometric view" width="680"></p>
 
-![Puzzle-module front view](images/07_v3_three_color_front.png)
+*Figure 6. Intended three-color design, isometric view.*
 
-*Figure 6. Front view of the left, middle, and right puzzle edges.*
+<p align="center"><img src="images/ideal_print_outcome_2.png" alt="Visualized three-color design, front view" width="680"></p>
+
+*Figure 7. Intended appearance from the front.*
 
 ### 4.4 Slicing in Bambu Studio
 
-The STL parts were prepared in **Bambu Studio** for the **Bambu Lab H2D**, using a **0.4 mm nozzle** and separate filament colors. The preview shows automatically generated supports.
+The screenshots below document the preparation and slicing stages. The initial setup favored reducing supports, but the print revealed a weakness at the hook; see Section 5.
 
-![Bambu Studio model preparation screenshot](images/08_bambu_studio_single_module.png)
+<p align="center"><img src="images/slicing_process_1.png" alt="Bambu Studio slicing process screenshot 1" width="760"></p>
 
-*Figure 7. Preparing a screwdriver-holder module for slicing.*
+*Figure 8. Slicing process — screenshot 1.*
 
-![Bambu Studio preview of the three-color print](images/09_bambu_studio_sliced_preview.png)
+<p align="center"><img src="images/slicing_process_2.png" alt="Bambu Studio slicing process screenshot 2" width="760"></p>
 
-*Figure 8. Layer-by-layer slicing preview of the three-color layout.*
+*Figure 9. Slicing process — screenshot 2.*
 
-### 4.5 Actual 3D Printing Process
+<p align="center"><img src="images/slicing_process_3.png" alt="Bambu Studio slicing process screenshot 3" width="760"></p>
 
-These three photos show the modules **during printing** on the H2D. They are real process photographs, not renderings or completed-product claims.
+*Figure 10. Slicing process — screenshot 3.*
 
-<p align="center"><img src="images/10_h2d_printing_blue_module.jpg" alt="Blue screwdriver holder module being printed on the H2D" width="350"></p>
+<p align="center"><img src="images/slicing_process_4.png" alt="Bambu Studio slicing process screenshot 4" width="760"></p>
 
-*Figure 9. Printing the blue module.*
+*Figure 11. Slicing process — screenshot 4.*
 
-<p align="center"><img src="images/11_h2d_printing_green_module.jpg" alt="Green screwdriver holder module being printed on the H2D" width="350"></p>
+## 5. First Print: Problem and Planned Improvement
 
-*Figure 10. Printing the green module.*
+### What happened
 
-<p align="center"><img src="images/12_h2d_printing_orange_module.jpg" alt="Orange screwdriver holder module being printed on the H2D" width="350"></p>
+In the first print, the side carrying the pegboard hooks was oriented **upward**. I originally chose this arrangement to **minimize support material** and simplify printing. However, **one hook broke**, showing that reducing supports alone was not enough to produce a robust attachment.
 
-*Figure 11. Printing the orange module.*
+### What I learned
 
-## Model Files
+In **FDM printing**, parts are built layer by layer, and strength often differs along the layer lines versus across the bonds between layers. A slender hook may fail if its geometry and expected bending loads are poorly aligned with the print layers. My instructor recommended changing the print orientation so **the hooks face sideways** instead of upward.
 
-The `models/` folder contains four models—left, middle, right, and the three-piece layout—each in STL and STEP formats. Click a file name below to open it on GitHub.
+### Next iteration
 
-| Module | STL (3D printing) | STEP (CAD model) |
-| --- | --- | --- |
-| Left piece | [puzzle_pegboard_left.stl](models/puzzle_pegboard_left.stl) | [puzzle_pegboard_left.step](models/puzzle_pegboard_left.step) |
-| Middle piece | [puzzle_pegboard_middle.stl](models/puzzle_pegboard_middle.stl) | [puzzle_pegboard_middle.step](models/puzzle_pegboard_middle.step) |
-| Right piece | [puzzle_pegboard_right.stl](models/puzzle_pegboard_right.stl) | [puzzle_pegboard_right.step](models/puzzle_pegboard_right.step) |
-| Three-part layout (separated for different colors) | [puzzle_pegboard_assembled.stl](models/puzzle_pegboard_assembled.stl) | [puzzle_pegboard_assembled.step](models/puzzle_pegboard_assembled.step) |
+- Rotate the models in the slicer so the **hooks are oriented sideways**.
+- Recheck supports and overhangs, accepting additional supports if needed for a stronger part.
+- Print again, remove supports carefully, and test whether the hooks withstand pegboard mounting and normal handling.
+- Add real photographs of the completed physical parts and installation results **after** the reprint and test.
 
-The three individual STL files are for printing each module separately. The assembled files preserve the separated three-part layout for multicolor printing, rather than fusing them into a single solid.
+**Current status:** The initial print exposed a broken hook. The proposed orientation change is **not yet documented here as a successful, tested print**.
 
-### Sliced Print Job
+## 6. Model and Sliced Print Files
 
-The three-color print job was sliced in **Bambu Studio** for the **Bambu Lab H2D** with a **0.4 mm nozzle**.
+The `models/` directory contains **4 STL models, 4 STEP models, and 4 sliced `.gcode.3mf` print-job files**. Select a file to view or download it directly from GitHub.
 
-**[Download the three-color sliced print job (.gcode.3mf)](models/puzzle_pegboard_three_color_sliced.gcode.3mf)**
+| Part | STL — model mesh | STEP — CAD geometry | G-code 3MF — sliced job |
+| --- | --- | --- | --- |
+| Left module | [Left STL](models/puzzle_pegboard_left.stl) | [Left STEP](models/puzzle_pegboard_left.step) | [Left sliced job](models/puzzle_pegboard_left.gcode.3mf) |
+| Middle module | [Middle STL](models/puzzle_pegboard_middle.stl) | [Middle STEP](models/puzzle_pegboard_middle.step) | [Middle sliced job](models/puzzle_pegboard_middle.gcode.3mf) |
+| Right module | [Right STL](models/puzzle_pegboard_right.stl) | [Right STEP](models/puzzle_pegboard_right.step) | [Right sliced job](models/puzzle_pegboard_right.gcode.3mf) |
+| Three-part layout | [Layout STL](models/puzzle_pegboard_assembled.stl) | [Layout STEP](models/puzzle_pegboard_assembled.step) | [Combined sliced job](models/puzzle_pegboard_assembled.gcode.3mf) |
 
-The `.gcode.3mf` file is a sliced 3MF print-job container that includes G-code and print-related settings. It is different from the STL/STEP design files above. Use the correct printer and material configuration before running the print.
+The assembled files retain the three parts as **separate pieces** rather than joining them into a single solid. A `.gcode.3mf` file is a **sliced 3MF container** that includes machine instructions and print settings; it is not an editable CAD model.
+
+**Important:** These sliced jobs document the print preparation. Check and update the **hook orientation, supports, printer, and filament settings** before attempting another print; the existence of a sliced file does not mean the orientation revision has already been tested.
